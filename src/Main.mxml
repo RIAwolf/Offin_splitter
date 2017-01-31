@@ -1,0 +1,184 @@
+<?xml version="1.0"?>
+<s:WindowedApplication
+        xmlns:fx="http://ns.adobe.com/mxml/2009"
+        xmlns:s="library://ns.adobe.com/flex/spark" xmlns:mx="library://ns.adobe.com/flex/mx"
+        title="XML failų skaidymas"
+        frameRate="30"
+        creationComplete="handleCreationComplete(event)"
+        >
+    <fx:Script><![CDATA[
+        import mx.controls.Alert;
+
+        [Embed(source="MB_Lupus_Ludus.png")]
+        [Bindable]
+        public var logoClass:Class;
+
+        [Embed(source="logo.png")]
+        [Bindable]
+        public var logoOffinClass:Class;
+
+        private var _file:File = new File();
+        private var _fileStream:FileStream = new FileStream();
+        private var _originalXML:XML;
+        private var _entryCount:int;
+        private var _fileOutput:File = new File();
+        private var _i:int = 0;
+
+        private function handleCreationComplete(event:Event):void {
+            this.status = 'Copyright MB "Lupus Ludus"';
+        }
+
+        private function handleSelectFile(event:Event):void {
+            _file.addEventListener(Event.SELECT, handleFileSelected);
+            _file.browse();
+        }
+
+        private function handleFileSelected(event:Event):void {
+            nativePathInput.text = _file.nativePath;
+            handleAnalyseInputData(null);
+        }
+
+        private function handleAnalyseInputData(event:Event):void {
+            _fileStream.open(_file, FileMode.READ);
+            var bytesRed:String = _fileStream.readUTFBytes(_fileStream.bytesAvailable);
+            _fileStream.close();
+            _originalXML = XML(bytesRed);
+            _entryCount = _originalXML.item.length();
+            numericStepper.maximum = _entryCount;
+            entryCountLabel.text = _entryCount.toString();
+            dataSplitPanel.enabled = true;
+            numericStepper.value = Math.ceil(_entryCount / 10);
+            handleStepperChange(null);
+        }
+
+        private function handleSelectOutputPath(event:Event):void {
+            _fileOutput.addEventListener(Event.SELECT, handleOutputFolderSelected);
+            _fileOutput.browseForDirectory("Pasirinkite XML skaidymo rezultatų direktorija");
+        }
+
+        private function handleOutputFolderSelected(event:Event):void {
+            nativePathOutput.text = _fileOutput.nativePath;
+            splitDataButton.enabled = true;
+        }
+
+        private function handleStepperChange(event:Event):void {
+            outputFileAmountLabel.text = Math.ceil(_entryCount / numericStepper.value).toString();
+        }
+
+        private var _outStream:FileStream;
+        private var _currentIteration:int;
+        private var _outputFileSuffix:String;
+        private var _outputFileName:String;
+        private var _startTag:String;
+        private var _endTag:String;
+        private var _resolvedFile:File;
+        private var _intervalID:uint;
+
+        private function handleStartSplitData(event:MouseEvent):void {
+
+            _startTag = '<?xml version="1.0" encoding="UTF-8" standalone="yes"?>'+"\n<" + _originalXML.name() + ">\n";
+            _endTag = "</" + _originalXML.name() + ">";
+            var originalNameArray:Array = _file.name.split(".");
+            originalNameArray.pop();
+            _outputFileName = originalNameArray.join(".");
+            _outputFileSuffix = ".xml";
+            _currentIteration = 0;
+            _outStream = new FileStream();
+
+            _resolvedFile = _fileOutput.resolvePath(_outputFileName + "_" + (_currentIteration + 1) + _outputFileSuffix);
+            _outStream.open(_resolvedFile, FileMode.WRITE);
+            _outStream.writeUTFBytes(_startTag);
+
+            bar.maximum = _entryCount;
+            bar.setProgress(_i,_entryCount);
+            bar.label = (_i+1) + "/" + _entryCount;
+            _i = 0;
+            splitDataButton.label="Skaidyti duomenis";
+            splitDataButton.enabled=false;
+            this.addEventListener(Event.ENTER_FRAME,handleEnterFrame);
+        }
+
+        private function handleEnterFrame(event:Event=null):void {
+            if (_i < _entryCount) {
+                var startI:int = _i;
+                bar.setProgress(_i,_entryCount);
+                bar.label = (_i+1) + "/" + _entryCount;
+                for(var j:int =startI; j<Math.min(startI+257,_entryCount);j++){
+                    var tempIteration:int = Math.floor(_i / numericStepper.value);
+                    if (tempIteration > _currentIteration) {
+                        _currentIteration = tempIteration;
+
+                        _outStream.writeUTFBytes(_endTag);
+                        _outStream.close();
+                        _resolvedFile = _fileOutput.resolvePath(_outputFileName + "_" + (_currentIteration + 1) + _outputFileSuffix);
+                        _outStream.open(_resolvedFile, FileMode.WRITE);
+                        _outStream.writeUTFBytes(_startTag);
+                    }
+                    _outStream.writeUTFBytes(_originalXML.item[_i].toString() + "\n");
+                    _i++;
+                }
+            } else {
+                _outStream.writeUTFBytes(_endTag);
+                _outStream.close();
+                this.removeEventListener(Event.ENTER_FRAME,handleEnterFrame);
+                bar.setProgress(_i,_entryCount);
+                bar.label = (_i) + "/" + _entryCount;
+                splitDataButton.label="Skaidyti duomenis";
+                splitDataButton.enabled=true;
+            }
+        }
+        ]]></fx:Script>
+    <s:BitmapImage source="{logoClass}" width="100%" height="100%" fillMode="scale" scaleMode="letterbox" alpha="0.05"/>
+    <s:VGroup width="100%" height="100%">
+        <s:Panel width="100%" height="20%" title="Pradinis dokumentas">
+            <s:VGroup width="100%" height="100%" padding="5" gap="5">
+                <s:HGroup width="100%" height="20%" gap="5">
+                    <s:Button width="40%" label="Pasirinkti pradinį dokumentą" click="handleSelectFile(event)"/>
+                    <s:TextInput width="60%" text="Nepasirinktas pradinis dokumentas"
+                                 id="nativePathInput"></s:TextInput>
+                </s:HGroup>
+                <s:HGroup width="100%" height="80%">
+                    <s:VGroup width="100%" height="100%" verticalAlign="middle" horizontalAlign="right">
+                        <s:Label text="Įrašų kiekis:"/>
+                    </s:VGroup>
+                    <s:VGroup width="100%" height="100%" verticalAlign="middle" horizontalAlign="left">
+                        <s:Label id="entryCountLabel" text="Nežinomas" fontWeight="bold"/>
+                    </s:VGroup>
+                </s:HGroup>
+            </s:VGroup>
+        </s:Panel>
+        <s:Panel title="Dokumento skaidymas" width="100%" height="100%" enabled="false" id="dataSplitPanel">
+            <s:VGroup width="100%" height="100%" padding="5" gap="5">
+                <s:HGroup width="100%" height="20%" gap="5">
+                    <s:Button label="Pasirinkti rezultato direktoriją" click="handleSelectOutputPath(event)" width="40%"/>
+                    <s:TextInput width="60%" text="Nepasirinkta rezultato direktorija"
+                                 id="nativePathOutput"></s:TextInput>
+                </s:HGroup>
+                <s:HGroup width="100%" height="20%" gap="5" verticalAlign="middle">
+                    <s:NumericStepper value="1000" width="40%" minimum="1" stepSize="10" id="numericStepper" change="handleStepperChange(event)" valueCommit="handleStepperChange(event)"/>
+                    <s:Label width="60%" text="Įrašų kiekis per failą"/>
+                </s:HGroup>
+                <s:HGroup width="100%" height="20%" gap="5" verticalAlign="middle">
+                    <s:Label width="40%" textAlign="right" text="Sugeneruotų failų kiekis:"/>
+                    <s:Label width="60%" text="1" id="outputFileAmountLabel" fontWeight="bold"/>
+                </s:HGroup>
+                <s:HGroup width="100%" height="40%">
+                    <s:VGroup width="40%" height="100%">
+                        <s:HGroup width="100%" height="50%" gap="5" verticalAlign="middle" horizontalAlign="left">
+                            <s:Button width="100%" height="100%" label="Skaidyti duomenis" enabled="false" id="splitDataButton" click="handleStartSplitData(event)"/>
+                        </s:HGroup>
+                        <s:HGroup width="100%" height="50%" gap="5" verticalAlign="middle" horizontalAlign="left">
+                            <mx:ProgressBar id="bar" labelPlacement="bottom" minimum="0" visible="true" maximum="100"
+                                            label="" direction="right" mode="manual" width="100%"/>
+                        </s:HGroup>
+                    </s:VGroup>
+                    <s:HGroup width="100%" height="100%" padding="10">
+                        <s:BitmapImage width="100%" height="100%" source="{logoOffinClass}" fillMode="scale" scaleMode="letterbox" smoothingQuality="high" horizontalAlign="right"/>
+                    </s:HGroup>
+                </s:HGroup>
+            </s:VGroup>
+
+        </s:Panel>
+
+    </s:VGroup>
+</s:WindowedApplication>

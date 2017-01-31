@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="Flex" version="4">
+  <component name="FlexBuildConfigurationManager" active="offin.lt xml splitter">
+    <configurations>
+      <configuration name="offin.lt xml splitter" target-platform="Desktop" main-class="Main" output-file="Main.swf" output-folder="$MODULE_DIR$/out/production/offin.lt xml splitter">
+        <dependencies target-player="22.0">
+          <sdk name="4.15.1_22" />
+        </dependencies>
+        <compiler-options />
+        <packaging-air-desktop use-generated-descriptor="false" custom-descriptor-path="$MODULE_DIR$/src/Main-descriptor.xml" package-file-name="Main">
+          <files-to-package>
+            <FilePathAndPathInPackage file-path="$MODULE_DIR$/src/Icon100.png" path-in-package="Icon100.png" />
+            <FilePathAndPathInPackage file-path="$MODULE_DIR$/src/Icon114.png" path-in-package="Icon114.png" />
+            <FilePathAndPathInPackage file-path="$MODULE_DIR$/src/Icon120.png" path-in-package="Icon120.png" />
+            <FilePathAndPathInPackage file-path="$MODULE_DIR$/src/Icon128.png" path-in-package="Icon128.png" />
+            <FilePathAndPathInPackage file-path="$MODULE_DIR$/src/Icon144.png" path-in-package="Icon144.png" />
+            <FilePathAndPathInPackage file-path="$MODULE_DIR$/src/Icon152.png" path-in-package="Icon152.png" />
+            <FilePathAndPathInPackage file-path="$MODULE_DIR$/src/Icon16.png" path-in-package="Icon16.png" />
+            <FilePathAndPathInPackage file-path="$MODULE_DIR$/src/Icon29.png" path-in-package="Icon29.png" />
+            <FilePathAndPathInPackage file-path="$MODULE_DIR$/src/Icon32.png" path-in-package="Icon32.png" />
+            <FilePathAndPathInPackage file-path="$MODULE_DIR$/src/Icon36.png" path-in-package="Icon36.png" />
+            <FilePathAndPathInPackage file-path="$MODULE_DIR$/src/Icon40.png" path-in-package="Icon40.png" />
+            <FilePathAndPathInPackage file-path="$MODULE_DIR$/src/Icon48.png" path-in-package="Icon48.png" />
+            <FilePathAndPathInPackage file-path="$MODULE_DIR$/src/Icon50.png" path-in-package="Icon50.png" />
+            <FilePathAndPathInPackage file-path="$MODULE_DIR$/src/Icon512.png" path-in-package="Icon512.png" />
+            <FilePathAndPathInPackage file-path="$MODULE_DIR$/src/Icon57.png" path-in-package="Icon57.png" />
+            <FilePathAndPathInPackage file-path="$MODULE_DIR$/src/Icon58.png" path-in-package="Icon58.png" />
+            <FilePathAndPathInPackage file-path="$MODULE_DIR$/src/Icon60.png" path-in-package="Icon60.png" />
+            <FilePathAndPathInPackage file-path="$MODULE_DIR$/src/Icon72.png" path-in-package="Icon72.png" />
+            <FilePathAndPathInPackage file-path="$MODULE_DIR$/src/Icon76.png" path-in-package="Icon76.png" />
+            <FilePathAndPathInPackage file-path="$MODULE_DIR$/src/Icon80.png" path-in-package="Icon80.png" />
+            <FilePathAndPathInPackage file-path="$MODULE_DIR$/src/Icon96.png" path-in-package="Icon96.png" />
+          </files-to-package>
+        </packaging-air-desktop>
+        <packaging-android />
+        <packaging-ios />
+      </configuration>
+    </configurations>
+    <compiler-options />
+  </component>
+  <component name="NewModuleRootManager" inherit-compiler-output="true">
+    <exclude-output />
+    <content url="file://$MODULE_DIR$">
+      <sourceFolder url="file://$MODULE_DIR$/src" isTestSource="false" />
+    </content>
+    <orderEntry type="jdk" jdkName="4.15.1_22" jdkType="Flex SDK Type (new)" />
+    <orderEntry type="sourceFolder" forTests="false" />
+  </component>
+</module>
