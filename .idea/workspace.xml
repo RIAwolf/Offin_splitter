@@ -1,11 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="AirPackageProjectParameters">
-    <option name="desktopPackageType" value="native installer (*.exe)" />
-  </component>
   <component name="ChangeListManager">
     <list default="true" id="0710f428-15ff-4b24-8b19-97696f9a07df" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="DELETED" beforePath="D:\=work=\offin.lt xml splitter\.idea\workspace.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\=work=\offin.lt xml splitter\out\production\offin.lt xml splitter\Icon100.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\=work=\offin.lt xml splitter\out\production\offin.lt xml splitter\Icon114.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\=work=\offin.lt xml splitter\out\production\offin.lt xml splitter\Icon120.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\=work=\offin.lt xml splitter\out\production\offin.lt xml splitter\Icon128.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\=work=\offin.lt xml splitter\out\production\offin.lt xml splitter\Icon144.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\=work=\offin.lt xml splitter\out\production\offin.lt xml splitter\Icon152.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\=work=\offin.lt xml splitter\out\production\offin.lt xml splitter\Icon16.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\=work=\offin.lt xml splitter\out\production\offin.lt xml splitter\Icon29.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\=work=\offin.lt xml splitter\out\production\offin.lt xml splitter\Icon32.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\=work=\offin.lt xml splitter\out\production\offin.lt xml splitter\Icon36.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\=work=\offin.lt xml splitter\out\production\offin.lt xml splitter\Icon40.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\=work=\offin.lt xml splitter\out\production\offin.lt xml splitter\Icon48.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\=work=\offin.lt xml splitter\out\production\offin.lt xml splitter\Icon50.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\=work=\offin.lt xml splitter\out\production\offin.lt xml splitter\Icon58.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\=work=\offin.lt xml splitter\out\production\offin.lt xml splitter\Icon60.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\=work=\offin.lt xml splitter\out\production\offin.lt xml splitter\Icon72.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\=work=\offin.lt xml splitter\out\production\offin.lt xml splitter\Icon76.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\=work=\offin.lt xml splitter\out\production\offin.lt xml splitter\Icon80.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\=work=\offin.lt xml splitter\out\production\offin.lt xml splitter\Icon96.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\=work=\offin.lt xml splitter\out\production\offin.lt xml splitter\Main.exe" afterPath="" />
+      <change type="DELETED" beforePath="D:\=work=\offin.lt xml splitter\out\production\offin.lt xml splitter\Main.swf" afterPath="" />
+      <change type="DELETED" beforePath="D:\=work=\offin.lt xml splitter\out\production\offin.lt xml splitter\logo.png" afterPath="" />
     </list>
     <ignored path="offin.lt xml splitter.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -63,11 +82,31 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ProgressBar.as" pinned="false" current-in-tab="true">
+      <file leaf-file-name="ProgressBar.as" pinned="false" current-in-tab="false">
         <entry file="file://D:/flexSDK/4.15.1_22/frameworks/projects/mx/src/mx/controls/ProgressBar.as">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.48">
-              <caret line="735" column="31" selection-start-line="735" selection-start-column="31" selection-end-line="735" selection-end-column="31" />
+            <state vertical-scroll-proportion="-12.769231">
+              <caret line="739" column="73" selection-start-line="739" selection-start-column="73" selection-end-line="739" selection-end-column="73" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Main-descriptor.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Main-descriptor.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="28" column="73" selection-start-line="28" selection-start-column="73" selection-end-line="28" selection-end-column="73" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.123411976">
+              <caret line="4" column="4" selection-start-line="4" selection-start-column="4" selection-end-line="4" selection-end-column="4" />
               <folding />
             </state>
           </provider>
@@ -90,6 +129,7 @@
         <option value="$PROJECT_DIR$/out/production/offin.lt xml splitter/Main-descriptor.xml" />
         <option value="$PROJECT_DIR$/src/Main.mxml" />
         <option value="$PROJECT_DIR$/src/Main-descriptor.xml" />
+        <option value="$PROJECT_DIR$/.gitignore" />
       </list>
     </option>
   </component>
@@ -176,15 +216,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="out" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="production" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="offin.lt xml splitter" />
+              <option name="myItemId" value=".idea" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -651,10 +683,23 @@
       <workItem from="1485876407560" duration="8173000" />
       <workItem from="1485884983179" duration="8064000" />
     </task>
+    <task id="LOCAL-00001" summary="cleanup">
+      <created>1485895744223</created>
+      <option name="number" value="00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1485895744223</updated>
+    </task>
+    <task id="LOCAL-00002" summary="cleanup">
+      <created>1485895786288</created>
+      <option name="number" value="00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1485895786288</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="16465000" />
+    <option name="totallyTimeSpent" value="16764000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -726,6 +771,10 @@
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="cleanup" />
+    <option name="LAST_COMMIT_MESSAGE" value="cleanup" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -830,8 +879,24 @@
     </entry>
     <entry file="file://D:/flexSDK/4.15.1_22/frameworks/projects/mx/src/mx/controls/ProgressBar.as">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.48">
-          <caret line="735" column="31" selection-start-line="735" selection-start-column="31" selection-end-line="735" selection-end-column="31" />
+        <state vertical-scroll-proportion="-12.769231">
+          <caret line="739" column="73" selection-start-line="739" selection-start-column="73" selection-end-line="739" selection-end-column="73" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Main-descriptor.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="28" column="73" selection-start-line="28" selection-start-column="73" selection-end-line="28" selection-end-column="73" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.123411976">
+          <caret line="4" column="4" selection-start-line="4" selection-start-column="4" selection-end-line="4" selection-end-column="4" />
           <folding />
         </state>
       </provider>
