@@ -2,29 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0710f428-15ff-4b24-8b19-97696f9a07df" name="Default" comment="">
-      <change type="DELETED" beforePath="D:\=work=\offin.lt xml splitter\.idea\workspace.xml" afterPath="" />
-      <change type="DELETED" beforePath="D:\=work=\offin.lt xml splitter\out\production\offin.lt xml splitter\Icon100.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\=work=\offin.lt xml splitter\out\production\offin.lt xml splitter\Icon114.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\=work=\offin.lt xml splitter\out\production\offin.lt xml splitter\Icon120.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\=work=\offin.lt xml splitter\out\production\offin.lt xml splitter\Icon128.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\=work=\offin.lt xml splitter\out\production\offin.lt xml splitter\Icon144.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\=work=\offin.lt xml splitter\out\production\offin.lt xml splitter\Icon152.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\=work=\offin.lt xml splitter\out\production\offin.lt xml splitter\Icon16.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\=work=\offin.lt xml splitter\out\production\offin.lt xml splitter\Icon29.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\=work=\offin.lt xml splitter\out\production\offin.lt xml splitter\Icon32.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\=work=\offin.lt xml splitter\out\production\offin.lt xml splitter\Icon36.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\=work=\offin.lt xml splitter\out\production\offin.lt xml splitter\Icon40.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\=work=\offin.lt xml splitter\out\production\offin.lt xml splitter\Icon48.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\=work=\offin.lt xml splitter\out\production\offin.lt xml splitter\Icon50.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\=work=\offin.lt xml splitter\out\production\offin.lt xml splitter\Icon58.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\=work=\offin.lt xml splitter\out\production\offin.lt xml splitter\Icon60.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\=work=\offin.lt xml splitter\out\production\offin.lt xml splitter\Icon72.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\=work=\offin.lt xml splitter\out\production\offin.lt xml splitter\Icon76.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\=work=\offin.lt xml splitter\out\production\offin.lt xml splitter\Icon80.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\=work=\offin.lt xml splitter\out\production\offin.lt xml splitter\Icon96.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\=work=\offin.lt xml splitter\out\production\offin.lt xml splitter\Main.exe" afterPath="" />
-      <change type="DELETED" beforePath="D:\=work=\offin.lt xml splitter\out\production\offin.lt xml splitter\Main.swf" afterPath="" />
-      <change type="DELETED" beforePath="D:\=work=\offin.lt xml splitter\out\production\offin.lt xml splitter\logo.png" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="offin.lt xml splitter.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -102,11 +80,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="true">
+      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/.gitignore">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.123411976">
-              <caret line="4" column="4" selection-start-line="4" selection-start-column="4" selection-end-line="4" selection-end-column="4" />
+            <state vertical-scroll-proportion="-14.96">
+              <caret line="22" column="0" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="workspace.xml" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -203,6 +191,28 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="offin.lt xml splitter" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="offin.lt xml splitter" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="out" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="production" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="offin.lt xml splitter" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -695,11 +705,17 @@
       <option name="project" value="LOCAL" />
       <updated>1485895786288</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="cleanup">
+      <created>1485895854588</created>
+      <option name="number" value="00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1485895854588</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="16764000" />
+    <option name="totallyTimeSpent" value="16941000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -712,7 +728,7 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3997773" sideWeight="0.5021299" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32962137" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32962137" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32962137" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32962137" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -895,8 +911,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.123411976">
-          <caret line="4" column="4" selection-start-line="4" selection-start-column="4" selection-end-line="4" selection-end-column="4" />
+        <state vertical-scroll-proportion="-14.96">
+          <caret line="22" column="0" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
